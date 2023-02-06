@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <div id = "container1">
+        <div class = "container container-flex" id = "main">
+            <h1>MACD</h1> 
+            <p>The Moving Average Convergence-Divergence indicator (MACD) is a model that follows the momentum of trends by 
+                showing the relationship between two moving averages of the price of a security. You can insert any moving average
+                 into this model that suits your fancy, and it back-tests well on cryptocurrencies on 4h or 1d. On a trading chart, the MACD was designed to 
+                 use exponential moving averages of 26 and 12 days.
+            </p>
+            <h2>How to use the MACD indicator</h2>
+            <p> 
+                When the MACD line moves above the base line, it signals an uptrend.
+    When the MACD line dips below the zero line, it indicates a downtrend.
+When the MACD line crosses above the signal line, it is an indication
+for traders to buy. This crossover is also referred to as a bullish
+MACD crossover, implying that price might start to increase.
+When the MACD line moves below the signal line, it is called a bearish MACD crossover, hinting that prices might start to decline. Typically, traders use it as an indication to sell.
+A bullish MACD divergence takes place when the price action is trending downwards and the MACD line is indicating higher bottoms, giving a strong bullish signal. Usually, a price starts a strong upward movement after a bullish MACD divergence.
+A bearish MACD divergence occurs when the price is rising and the MACD line is creating lower tops, suggesting that the price might move in a bearish direction. Often, a quick bearish move will follow a bearish MACD divergence.
+It is an overbought MACD when the MACD line moves a relatively big distance from the signal line. The expectation is that the bullish trend will start to dwindle after the strong increase followed by a bearish trend.
+The oversold MACD signal occurs when the MACD line secures a relatively significant distance from the signal line. The price is expected to stop decreasing and start increasing.
+            </p>
+
+        </div>
+    </div>
+    
+   
+    
+    <div class = "placeholder">
+        <input placeholder="i.e BTC, ETH etc.." name = "coin">
+        <button id = "button">Submit</button>
+        <select name="cars" id="testselect">
+            <div class = "dropdown-content">
+                <option value = "1d">Select time interval...</option>
+                <option value="1m">1 minute</option>
+                <option value="5m">5 minute</option>
+                <option value="30m">30 minute</option>
+                <option value="1h">1 hour</option>
+                <option value ="2h">2 hour</option>
+                <option value = "4h">4 hour</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </div>
+           
+          </select>
+
+    </div>
+
+<div id = "container2">
+    <div class = "container container-flex" id = "charts">
+        <div class = time1>
+            <h3><span id = 'testt'></span>/USDT</h3>
+            <h3><span id = 'times'></span></h3>
+        </div>
+        <div id = "tvchart">
+            <div class = "tv-lightweight-charts"></div>
+        </div>
+    </div>
+</div>
+
+        
+     
+</body>
+<script src = "tv.js"></script>
+<script src = "MACD.js"></script>
+</html>

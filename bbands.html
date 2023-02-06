@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "container1">
+        <div class = "container container-flex" id = "main">
+            <h1>Bollinger Bands</h1> 
+            <p>Bollinger bands are a volatility indicator. They are envelopes plotted at a standard deviation level above and below a simple moving average of the price. Because the distance of the bands is based on standard deviation, 
+                they adjust to volatility swings in the underlying price2. When the closing price crosses above the upper Bollinger band, it is considered overbought. On the other hand, if the closing price crosses below the lower band, 
+                it is considered oversold. Bollinger bands are visually easy to interpret and can be applied across any underlying asset which makes them pretty useful. They also tend to work better in a sideways market so we have to be mindful 
+                of when to use them.
+            </p>
+            <h2>How to use Bollinger Bands</h2>
+            <p>The general rule of thumb for Bollinger Bands is that once the price reaches an upper band, it usually means it is a bullish signal. Meanwhile if the price touches the lower band, it means
+                that it's time to sell. Look at the chart for buy and sell signals as a reference.
+            </p>
+        </div>
+    </div>
+    
+   
+    
+    <div class = "placeholder">
+        <input placeholder="i.e BTC, ETH etc.." name = "coin">
+        <button id = "button">Submit</button>
+        <select name="cars" id="testselect">
+            <div class = "dropdown-content">
+                <option value = "1d">Select time interval...</option>
+                <option value="1m">1 minute</option>
+                <option value="5m">5 minute</option>
+                <option value="30m">30 minute</option>
+                <option value="1h">1 hour</option>
+                <option value ="2h">2 hour</option>
+                <option value = "4h">4 hour</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </div>
+           
+          </select>
+
+    </div>
+
+<div id = "container2">
+    <div class = "container container-flex" id = "charts">
+        <div class = time1>
+            <h3><span id = 'testt'></span>/USDT</h3>
+            <h3><span id = 'times'></span></h3>
+        </div>
+        <div id = "tvchart">
+            <div class = "tv-lightweight-charts"></div>
+        </div>
+    </div>
+</div>
+
+        
+     
+</body>
+<script src = "tv.js"></script>
+<script src = "BBands.js"></script>
+</html>

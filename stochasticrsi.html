@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "container1">
+        <div class = "container container-flex" id = "main">
+            <h1>Stohastic RSI</h1> 
+            <p>Stochastic RSI considers the relative strength index (RSI) and applies stochastic oscillator formula to it, deriving market trends that are more sensitive than RSI alone. It is a technical indicator built through the combination of stochastic oscillator formula and relative strength index (RSI) and ranges between 0 to 100.
+
+                Stochastic RSI allows traders to identify whether an asset is in the overbought (80) or oversold (20) territory.
+                
+                Since Stochastic RSI is derived from RSI itself, it makes absolute sense to understand the concept. Basically, the RSI is a technical indicator that tracks an asset’s momentum, identifying whether the cryptocurrency is overbought or oversold.
+                
+                Typically the RSI is measured between 0 to 100, with values above 70 indicating overbought and values below 30 reflecting oversold positions. The upshot? It represents a signal for the direction and the strength of the trend.  
+            </p>
+            <h2>How to use Stohastic RSI</h2>
+            <p>The same principles with Stohastic RSI apply the same as with RSI. The only different is that 80 (0.08 on the chart below) is overbought
+                territory while 20 (0.08 on the chart below) is oversold territory
+            </p>
+        </div>
+    </div>
+    
+   
+    
+    <div class = "placeholder">
+        <input placeholder="i.e BTC, ETH etc.." name = "coin">
+        <button id = "button">Submit</button>
+        <select name="cars" id="testselect">
+            <div class = "dropdown-content">
+                <option value = "1d">Select time interval...</option>
+                <option value="1m">1 minute</option>
+                <option value="5m">5 minute</option>
+                <option value="30m">30 minute</option>
+                <option value="1h">1 hour</option>
+                <option value ="2h">2 hour</option>
+                <option value = "4h">4 hour</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </div>
+           
+          </select>
+
+    </div>
+
+<div id = "container2">
+    <div class = "container container-flex" id = "charts">
+        <div class = time1>
+            <h3><span id = 'testt'></span>/USDT</h3>
+            <h3><span id = 'times'></span></h3>
+        </div>
+        <div id = "tvchart">
+            <div class = "tv-lightweight-charts"></div>
+        </div>
+    </div>
+</div>
+
+  
+   
+   
+</body>
+
+
+
+<script src = "tv.js"></script>
+<script src = "stochrsi.js"></script>
+</html>

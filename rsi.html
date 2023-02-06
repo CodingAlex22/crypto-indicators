@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "container1">
+        <div class = "container container-flex" id = "main">
+            <h1>RSI</h1> 
+            <p>The RSI is a momentum indicator used in technical analysis. This indicator examines the magnitude of recent price fluctuations to determine whether or not the price of a cryptocurrency is overbought or oversold.
+
+                The momentum oscillator, a line graph oscillating between two extremes, reads anywhere from 0 to 100. J. Welles Wilder invented it in his groundbreaking book New Concepts in Technical Trading Systems, published in 1978.
+            </p>
+            <h2>How to use RSI</h2>
+            <p>A crypto asset is said to be overbought when the RSI is above 70. At this point, the bullish trend is due for a correction. On the other hand, when it is below 30, the price is considered to be oversold, due for a rebound.
+
+                In a strong uptrend, the Relative Strength Index will frequently reach 70 or even higher for extended periods, whereas, in a downtrend, it may remain at 30 or below for an extended length of time. Traders can use the RSI to determine when to buy at oversold levels in a bullish trend. However, in a bearish trend, they look for selling opportunities when the price becomes overbought.
+                
+                RSI level of above 50 indicates more buying momentum and shows stronger buying power in the market. On the other hand, a reading below 50 indicates more bearish power. You can always analyze the price activity around the 50-level to know when a bullish or bearish trend is about to change.
+            </p>
+            
+
+        </div>
+    </div>
+    
+   
+    
+    <div class = "placeholder">
+        <input placeholder="i.e BTC, ETH etc.." name = "coin">
+        <button id = "button">Submit</button>
+        <select name="cars" id="testselect">
+            <div class = "dropdown-content">
+                <option value = "1d">Select time interval...</option>
+                <option value="1m">1 minute</option>
+                <option value="5m">5 minute</option>
+                <option value="30m">30 minute</option>
+                <option value="1h">1 hour</option>
+                <option value ="2h">2 hour</option>
+                <option value = "4h">4 hour</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </div>
+           
+          </select>
+
+    </div>
+
+<div id = "container2">
+    <div class = "container container-flex" id = "charts">
+        <div class = time1>
+            <h3><span id = 'testt'></span>/USDT</h3>
+            <h3><span id = 'times'></span></h3>
+        </div>
+        <div id = "tvchart">
+            <div class = "tv-lightweight-charts"></div>
+        </div>
+    </div>
+</div>
+
+        
+     
+</body>
+<script src = "tv.js"></script>
+<script src = "RSI.js"></script>
+</html>

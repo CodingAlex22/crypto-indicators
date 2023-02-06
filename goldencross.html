@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "container1">
+        <div class = "container container-flex" id = "main">
+            <h1>Golden Cross</h1> 
+            <p>A so-called “golden cross” occurs when a short-term MA and a major, long-term MA cross over toward the upside. A golden cross suggests a price rise and an upward turn in the market.
+                The short-term MA moves upward much faster than the long-term MA until market conditions push them to cross. In terms of simple moving averages, golden crosses occur when the 50-day SMA 
+                crosses above the 200-day SMA, indicating a definitive uptrend.
+            </p>
+            <h2>Death Cross</h2>
+            <p>Compared to the golden cross, a death cross involves a downside MA crossover. This marks a definitive market downturn and typically occurs when the short-term MA trends down, crossing the long-term MA. 
+
+                Simply put, it’s the exact opposite of the golden cross. A death cross is usually read as a bearish signal. The 50-day MA typically crosses below the 200-day MA, signaling a downtrend.
+                
+                Three phases mark a death cross. The first occurs during an uptrend when the short-term MA is still above the long-term MA. The second phase is characterized by a reversal, during which the short-term 
+                MA crosses below the long-term MA. This is followed by the start of a downtrend as the short-term MA continues to move downward, staying below the long-term MA. 
+            </p>
+            <p>In other words, Moving Averages are used for the long term, Exponential Moving averages are used for short term. Sometimes traders will
+                mix the two indicators to create a long/short signal as shown in the chart. Generally indicators are more accuate when applied
+                to higher time frames.</p>
+        </div>
+    </div>
+    
+   
+    
+    <div class = "placeholder">
+        <input placeholder="i.e BTC, ETH etc.." name = "coin">
+        <button id = "button">Submit</button>
+        <select name="cars" id="testselect">
+            <div class = "dropdown-content">
+                <option value = "1d">Select time interval...</option>
+                <option value="1m">1 minute</option>
+                <option value="5m">5 minute</option>
+                <option value="30m">30 minute</option>
+                <option value="1h">1 hour</option>
+                <option value ="2h">2 hour</option>
+                <option value = "4h">4 hour</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </div>
+           
+          </select>
+
+    </div>
+
+<div id = "container2">
+    <div class = "container container-flex" id = "charts">
+        <div class = time1>
+            <h3><span id = 'testt'></span>/USDT</h3>
+            <h3><span id = 'times'></span></h3>
+        </div>
+        <div id = "tvchart">
+            <div class = "tv-lightweight-charts"></div>
+        </div>
+    </div>
+</div>
+
+  
+   
+   
+</body>
+
+
+
+<script src = "tv.js"></script>
+<script src = "goldencross.js"></script>
+</html>
