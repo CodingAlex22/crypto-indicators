@@ -6,7 +6,7 @@ Crypto indicators is a crypto tracker website that uses Binance's API to find a 
 
 **Link to project:** https://crypto-indicators20.netlify.app/
 
-<img src="https://i.ibb.co/mNg83qw/ezgif-4-8ece80c788.gif" height="80%" />
+<img src="https://i.ibb.co/SxSLn0J/ezgif-4-27886f0530.gif" height="80%" />
 
 ## Usage
 
