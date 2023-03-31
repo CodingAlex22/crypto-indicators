@@ -65,7 +65,7 @@ function getCharts() {
             
             pane: 0,
           });
-            const klinedata = await getData();
+              const klinedata = await getData();
       let sum = 0;
       let count = 0;
       let max = Number.MIN_VALUE;
@@ -94,6 +94,7 @@ function getCharts() {
       }
 
       console.log(precision_number);
+
 
 
         
