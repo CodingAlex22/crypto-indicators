@@ -65,26 +65,36 @@ function getCharts() {
             
             pane: 0,
           });
-        const klinedata = await getData();
-        let filternumbers = klinedata.filter((d) => d.open).map((d) => ({value: d.open}));
-        let arrays =  filternumbers.slice(filternumbers.length - 100, filternumbers.length);
-        
-        var results = arrays.map(obj => parseFloat(obj.value));
-        const average = results.reduce((a, b) => a + b) / results.length;
-        var nine = -Math.floor( Math.log10(average) + 1)
-        let precision_number = nine + 4;
-        let decimalarr = [0,'.'];
-        for(i = 0; i < precision_number - 1; i++){
-          decimalarr.push(0);
-        }   
-        decimalarr.push(1);
-        let minMove_number = parseFloat(decimalarr.join(''));
-        console.log(precision_number);
+            const klinedata = await getData();
+      let sum = 0;
+      let count = 0;
+      let max = Number.MIN_VALUE;
+      let min = Number.MAX_VALUE;
 
-        if (precision_number <= 0){
-            precision_number = 2;
-            minMove_number = 0.01;
+      for (const d of klinedata) {
+        if (d.open) {
+          const value = parseFloat(d.open);
+          sum += value;
+          count++;
+          if (value > max) max = value;
+          if (value < min) min = value;
         }
+      }
+
+      const average = sum / count;
+      let minMove_number, precision_number;
+
+      if (average === 0) {
+        minMove_number = 0.01;
+        precision_number = 2;
+      } else {
+        const nine = -Math.floor(Math.log10(average)) + 1;
+        precision_number = Math.max(nine + 4, 0);
+        minMove_number = parseFloat('0.' + '0'.repeat(precision_number - 1) + '1');
+      }
+
+      console.log(precision_number);
+
 
         
         const candleseries = chart.addCandlestickSeries({
