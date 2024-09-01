@@ -27,7 +27,7 @@ document.querySelector('#times').innerText = localStorage.getItem('userselect');
 
 function getCharts() {
     const getData = async () => {
-        const url = `vercel-proxy-1-rb0vg4434-codingalex22s-projects.vercel.app/${localStorage.getItem('userinput')}USDT/${localStorage.getItem('userselect')}`
+        const url = `https://vercel-proxy2-fp95hc1d3-codingalex22s-projects.vercel.app/${localStorage.getItem('userinput')}USDT/${localStorage.getItem('userselect')}`
         const resp = await fetch(url);
         const data = await resp.json();
         return data;
